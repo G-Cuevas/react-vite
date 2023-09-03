@@ -1,12 +1,13 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom/client'
+import { Component } from './Component'
+import { Counter } from './Counter'
 
-function App() {
-  return <div>Hello Worldaaaaaa!</div>
-}
+import './styles.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <App />
+        <Component title="hola hola" />
+        <Counter />
     </React.StrictMode>
 )
